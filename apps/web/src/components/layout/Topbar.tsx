@@ -4,9 +4,21 @@ export default function Topbar() {
   const location = useLocation()  
     
   const getPageTitle = () => {  
+    if (location.pathname.startsWith('/campaigns/')) {  
+      return 'Detalhes da Campanha'  
+    }  
+      
     switch (location.pathname) {  
       case '/dashboard':  
         return 'Dashboard'  
+      case '/tools':  
+        return 'Ferramentas'  
+      case '/products':  
+        return 'Produtos'  
+      case '/employees':  
+        return 'Funcionários'  
+      case '/campaigns':  
+        return 'Campanhas'  
       case '/costs':  
         return 'Custos'  
       default:  

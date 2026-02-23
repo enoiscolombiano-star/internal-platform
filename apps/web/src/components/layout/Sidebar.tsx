@@ -4,6 +4,10 @@ export default function Sidebar() {
   const navItems = [  
     { name: 'Dashboard', path: '/dashboard' },  
     { name: 'Custos', path: '/costs' },  
+    { name: 'Ferramentas', path: '/tools' },  
+    { name: 'Produtos', path: '/products' },  
+    { name: 'Funcionários', path: '/employees' },  
+    { name: 'Campanhas', path: '/campaigns' },  
   ]  
   
   return (  
